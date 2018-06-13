@@ -13,7 +13,7 @@ header {
 
 <body>
 <header>
-<h1><?php This is a Heading ?></h1>
+<h1><?php echo 'This is a Heading' ?></h1>
 
 </header>
 </body>
