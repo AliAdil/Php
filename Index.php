@@ -15,11 +15,11 @@ header {
 <body>
 <header>
 <h1>
-<?php
-    $name = $_GET['name'];
-    echo 'Hello '.$name. 'Pash';
-?>
+<?php $Name = $_GET['name'];
+echo 'My Name is '.$Name.' PAsh'?>
 </h1>
+
+<h1><?php echo "My Name is ".$_GET['car'];?></h1>
 </header>
 </body>
 </html>
