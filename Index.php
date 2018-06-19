@@ -1,5 +1,7 @@
 <?php
 
-$name = '';
+$names = [ 'ali', 'usman', 'bilal'];
 
-require 'index.view.php';
+foreach ($names as $name){
+    echo $name;
+}
