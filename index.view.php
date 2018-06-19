@@ -18,16 +18,16 @@
 
                     <?php endforeach; ?>
             </ul>
-            <ul>
+            <ol>
                     <?php 
                 
-                    foreach ($names as $arrayValues)
+                    foreach ($animals as $arrayValues)
                         {
                         echo "<li>$arrayValues</li>";
                         }  
                     
                     ?>
-            </ul>
+            </ol>
         </header>
     </body>
 </html>
