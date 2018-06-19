@@ -1,23 +1,33 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-<style>
+    <head>
+    <title>Page Title</title>
+    <style>
 
-</style>
-</head>
+    </style>
+    </head>
 
-<body>
-<header>
-<ul>
-<?php 
-        foreach ($names as $arrayValues){
-        echo "<li>$arrayValues</li>";
-  
-   
-}  ?>
-</ul>
-</header>
-</body>
+    <body>
+        <header>
+            <ul>
+
+                    <?php foreach ($names as $name) : ?>
+                        
+                        <li><?= $name; ?></li>
+
+                    <?php endforeach; ?>
+            </ul>
+            <ul>
+                    <?php 
+                
+                    foreach ($names as $arrayValues)
+                        {
+                        echo "<li>$arrayValues</li>";
+                        }  
+                    
+                    ?>
+            </ul>
+        </header>
+    </body>
 </html>
