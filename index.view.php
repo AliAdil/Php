@@ -15,7 +15,7 @@ header {
 <body>
 <header>
 <h1>
-<?=  $greeting; ?>
+<?=  'hello'.Htmlspecialchars($_GET['name']); ?>
 </h1>
 </header>
 </body>

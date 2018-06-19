@@ -1,5 +1,5 @@
 <?php
 
-$greeting = 'Hello , World';
+$name = '';
 
 require 'index.view.php';
