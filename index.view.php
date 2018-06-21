@@ -28,6 +28,8 @@
                     
                     ?>
             </ol>
+           
         </header>
+        <h1>        <?= 'Hello '.htmlspecialchars($_GET['test']);?> </h1>
     </body>
 </html>
