@@ -10,11 +10,14 @@ $person = [
     'career'=> 'Software Developer'
 ];
 
+$task= [ 'tile:' =>' Make associative array of task ', 'due:'=> ' Today',' assigned_to:'=> ' Ali Adil',' completed:'=> ' Yes'];
+
 $person ['name'] = 'Ali Adil';
 
 //echo $person['age'];
-echo '<pre>';
-var_dump($person);
-echo '<pre>';
 
-//require 'index.view.php';
+//die(var_dump($person));
+unset ($person['age']);
+unset ($person['hair']);
+
+require 'index.view.php';

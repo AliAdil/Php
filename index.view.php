@@ -15,6 +15,11 @@
                 <li><strong><?= $key; ?> </strong><?=  $feature; ?></li>
 
             <?php endforeach;  ?>
+
+            <?php foreach ($task as $assign => $work) :?>
+                <li><em><?= $assign ?></em><strong><?= $work ?></strong></li>
+
+            <?php endforeach;     ?>
         
         
         
