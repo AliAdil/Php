@@ -13,6 +13,8 @@ $person = [
 $person ['name'] = 'Ali Adil';
 
 //echo $person['age'];
+echo '<pre>';
 var_dump($person);
+echo '<pre>';
 
 //require 'index.view.php';
