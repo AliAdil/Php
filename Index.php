@@ -12,7 +12,7 @@ $person = [
 
 $person ['name'] = 'Ali Adil';
 
-echo $person['age'];
-
+//echo $person['age'];
+var_dump($person);
 
 //require 'index.view.php';
