@@ -2,7 +2,7 @@
 
 //$names = [ 'ali', 'usman', 'bilal'];
 //$animals = ['cat','dog','tiger','elephant','lion','bear'];
-
+// $animals [] = 'jaguar';
 
 $person = [
     'age'=> 31,
@@ -10,5 +10,9 @@ $person = [
     'career'=> 'Software Developer'
 ];
 
+$person ['name'] = 'Ali Adil';
 
-require 'index.view.php';
+echo $person['age'];
+
+
+//require 'index.view.php';
