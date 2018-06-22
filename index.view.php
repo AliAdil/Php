@@ -36,7 +36,7 @@
                 <strong>Person Responsible </strong> <?= $task['assigned_to'];?>
             </li>
             <li>
-                <strong>Status </strong> <?= $task['completed']?'Complete' : 'Incomplete';?>
+                <strong>Status </strong> <?= $task['completed']?'Complete' : 'incomplete';?>
             </li>
             <li>
                 <?php 
@@ -44,7 +44,7 @@
                     echo 'Complete';
                 }
                 else{
-                    echo 'incomplete';
+                    echo 'Incomplete';
                 } ?>
             </li>
         
