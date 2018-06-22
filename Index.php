@@ -18,7 +18,7 @@ $person ['name'] = 'Ali Adil';
 //echo $person['age'];
 
 //die(var_dump($person));
-unset ($person['age']);
-unset ($person['hair']);
+//unset ($person['age']);
+//unset ($person['hair']);
 
 require 'index.view.php';
