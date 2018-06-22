@@ -38,14 +38,14 @@
             <li>
                 <strong>Status </strong> <?= $task['completed']?'Complete' : 'incomplete';?>
             </li>
-            <li>
+            <li><h1>
                 <?php 
                 if ($task['completed']){
                     echo 'Complete';
                 }
                 else{
                     echo 'Incomplete';
-                } ?>
+                } ?></h1>
             </li>
         
         
