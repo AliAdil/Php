@@ -26,7 +26,7 @@
         
         
         </ul>
-            <!-- Showing list item Without Foreach loop -->
+            <!-- Showing list item With out Foreach loop -->
         <ul>
             <li>
                 <strong>Name: </strong> <?= $task['title'];?>
@@ -38,11 +38,13 @@
                 <strong>Person Responsible </strong> <?= $task['assigned_to'];?>
             </li>
                 <!-- Ternary Operator -->
+                <p>(----Ternary Operator Used below <p>
             <li>
                 <strong>Status </strong> <?= $task['completed']?'&#9745' : '&#9744';?>
             </li>
+            <!-- With  brackets -->
+            <p>With if else brackets<p>
             <li>
-                <!-- With  brackets -->
                 <?php 
                      if ($task['completed'])
                         {
@@ -52,11 +54,14 @@
                         echo '&#9744';
                         }       
                 ?>
-                <!-- With out brackets -->
-                <br>
-                    <?php if ($task['completed']) ?>
+                <!-- Without if else brackets -->
+                <p>Without if else brackets<p>
+                
+                    <?php if ($task['completed']) : ?>
                         <strong>&#9745</strong>
-                    <? endif; ?>
+                    <?php else : ?>
+                        <strong>&#9744</strong>
+                    <?php endif ?>
 
             </li>
         
