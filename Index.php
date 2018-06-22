@@ -11,7 +11,7 @@ $person = [
 ];
 
 $task= [ 'title' =>' Make associative array of task ', 
-'due'=> ' Today','assigned_to'=> ' Ali Adil','completed'=> false];
+'due'=> ' Today','assigned_to'=> ' Ali Adil','completed'=> true];
 
 $person ['name'] = 'Ali Adil';
 

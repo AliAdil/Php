@@ -11,6 +11,7 @@
     <body>
         <h1>Task For The Day</h1>
         <h2><?= ucwords('this is subheading'); ?> </h2>
+            <!-- Showing List Items With foreach loop-->
         <ul>
             <?php foreach ($person as $key=> $feature) : ?>
                 <li><strong><?= ucwords($key); ?> </strong><?=  $feature; ?></li>
@@ -25,6 +26,7 @@
         
         
         </ul>
+            <!-- Showing list item Without Foreach loop -->
         <ul>
             <li>
                 <strong>Name: </strong> <?= $task['title'];?>
@@ -35,17 +37,27 @@
             <li>
                 <strong>Person Responsible </strong> <?= $task['assigned_to'];?>
             </li>
+                <!-- Ternary Operator -->
             <li>
-                <strong>Status </strong> <?= $task['completed']?'Complete' : 'incomplete';?>
+                <strong>Status </strong> <?= $task['completed']?'&#9745' : '&#9744';?>
             </li>
-            <li><h1>
+            <li>
+                <!-- With  brackets -->
                 <?php 
-                if ($task['completed']){
-                    echo 'Complete';
-                }
-                else{
-                    echo 'Incomplete';
-                } ?></h1>
+                     if ($task['completed'])
+                        {
+                        echo '<strong>&#9745</strong>';
+                        }
+                    else{
+                        echo '&#9744';
+                        }       
+                ?>
+                <!-- With out brackets -->
+                <br>
+                    <?php if ($task['completed']) ?>
+                        <strong>&#9745</strong>
+                    <? endif; ?>
+
             </li>
         
         
