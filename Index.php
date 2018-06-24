@@ -10,11 +10,13 @@ class Task {
     public $description;
     public $completed= false;
 
+    // automatically triggered on istantiation
+    // when ever we create new task
     public function __construct($description)
     {
-        // automatically triggered on istantiation
-        // descrition is a property
-        //
+        
+        // description is a property
+       // assinging argument value to  property 
         $this -> description = $description;
     }
 
