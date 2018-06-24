@@ -1,7 +1,33 @@
 <?php
-// require 'functions.php';
+ require 'functions.php';
+// class name Should be noun
+
+class Task {
+    // defined in the class fucntion called method
+    // constructor
+    // property defined here
+    // encapuslation public private protected  
+    protected $description;
+    protected $completed= false;
+
+    public function __construct($description)
+    {
+        // automatically triggered on istantiation
+        // descrition is a property
+        //
+        $this -> description = $description;
+    }
+
+    public function isComplete(){
+        return $this -> completed;
+
+    }
+}
 
 
+$task = new Task('Go to store');
+var_dump($task -> isComplete());
+dd($task);
 //$names = [ 'ali', 'usman', 'bilal'];
 // $animals = ['cat','dog','tiger','elephant','lion','bear'];
 // $animals [] = 'jaguar';
