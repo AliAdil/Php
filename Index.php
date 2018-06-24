@@ -18,14 +18,19 @@ class Task {
         $this -> description = $description;
     }
 
+    public function complete (){
+      $this -> completed = true;
+    }
+
     public function isComplete(){
         return $this -> completed;
 
     }
 }
 
-
-$task = new Task('Go to store');
+// instentiated a task 
+$task = new Task('Go to store'); // new task object
+$task -> complete(); // complete the task
 var_dump($task -> isComplete());
 dd($task);
 //$names = [ 'ali', 'usman', 'bilal'];
