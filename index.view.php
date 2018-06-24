@@ -71,7 +71,10 @@
         
         
         </ul>
-    --> 
-    
+    --> <ul>
+            <?php foreach($tasks as $task) : ?>
+                 <li></li>               
+            <?php endforeach : ?>
+        </ul>
     </body>
 </html>

@@ -28,11 +28,21 @@ class Task {
     }
 }
 
-// instentiated a task 
-$task = new Task('Go to store'); // new task object
-$task -> complete(); // complete the task
-var_dump($task -> isComplete());
+$taskss = [
+    //different isntants of the class
+    new Task ('Go to the store'),
+    new Task ('Finish my screencast'),
+    new Task ('Clean my room')
+];
+
 dd($task);
+// instentiated a task 
+// $task = new Task('Go to store'); // new task object
+// $task -> complete(); // complete the task
+// var_dump($task -> isComplete());
+// dd($task);
+
+
 //$names = [ 'ali', 'usman', 'bilal'];
 // $animals = ['cat','dog','tiger','elephant','lion','bear'];
 // $animals [] = 'jaguar';
