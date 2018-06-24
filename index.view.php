@@ -71,10 +71,11 @@
         
         
         </ul>
-    --> <ul>
+    --> 
+        <ul>
             <?php foreach($tasks as $task) : ?>
-                 <li></li>               
-            <?php endforeach : ?>
+                 <li><?= $task ->description; ?></li>               
+            <?php endforeach; ?>
         </ul>
     </body>
 </html>

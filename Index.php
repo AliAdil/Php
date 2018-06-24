@@ -7,7 +7,7 @@ class Task {
     // constructor
     // property defined here
     // encapuslation public private protected  
-    protected $description;
+    public $description;
     protected $completed= false;
 
     public function __construct($description)
@@ -28,14 +28,14 @@ class Task {
     }
 }
 
-$taskss = [
+$tasks = [
     //different isntants of the class
     new Task ('Go to the store'),
     new Task ('Finish my screencast'),
     new Task ('Clean my room')
 ];
 
-dd($task);
+//dd($task);
 // instentiated a task 
 // $task = new Task('Go to store'); // new task object
 // $task -> complete(); // complete the task
