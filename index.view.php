@@ -9,9 +9,10 @@
     </head>
 
     <body>
+    <!--
         <h1>Task For The Day</h1>
         <h2><?= ucwords('this is subheading'); ?> </h2>
-            <!-- Showing List Items With foreach loop-->
+            <!-- Showing List Items With foreach loop--
         <ul>
             <?php foreach ($person as $key=> $feature) : ?>
                 <li><strong><?= ucwords($key); ?> </strong><?=  $feature; ?></li>
@@ -26,7 +27,7 @@
         
         
         </ul>
-            <!-- Showing list item With out Foreach loop -->
+            <!-- Showing list item With out Foreach loop --
             
         <ul>
             <h1> I AM SAME ARRAY BUT USED IN DIFFERNT WAY</h1>
@@ -44,7 +45,7 @@
             <li>
                 <strong>Status </strong> <?= !$task['completed']?'&#9745' : '&#9744';?>
             </li>
-            <!-- With  brackets -->
+            <!-- With  brackets --
             <h1>With if else brackets in code </h1>
             <li>
                 <?php 
@@ -56,7 +57,7 @@
                         echo '&#9744';
                         }       
                 ?>
-                <!-- Without if else brackets -->
+                <!-- Without if else brackets --
                 <p>Without if else brackets in code<p>
                 
                     <?php if ($task['completed']) : ?>
@@ -70,6 +71,7 @@
         
         
         </ul>
+    --> 
     
     </body>
 </html>
