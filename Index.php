@@ -1,9 +1,13 @@
 <?php
  require 'functions.php';
 
-
+ try{
 $pdo = new PDO('mysql:host=127.0.0.1;dbname=alidb','username','');
+}
 
+catch(PDOException $e){
+    
+}
 // class name Should be noun
 
 // class Task {
