@@ -72,7 +72,7 @@
         
         </ul>
     --> 
-        <ul>
+        <!-- <ul>
             <?php foreach($tasks as $task) : ?>
                  <li>
                     <?php if($task->completed) : ?>
@@ -88,6 +88,6 @@
 
                 </li>               
             <?php endforeach; ?>
-        </ul>
+        </ul> -->
     </body>
 </html>
