@@ -1,48 +1,52 @@
 <?php
  require 'functions.php';
+
+
+$pdo = new PDO('mysql:host=127.0.0.1;dbname=alidb','username','');
+
 // class name Should be noun
 
-class Task {
-    // defined in the class fucntion called method
-    // constructor
-    // property defined here
-    // encapuslation public private protected  
-    public $description;
-    public $completed= false;
+// class Task {
+//     // defined in the class fucntion called method
+//     // constructor
+//     // property defined here
+//     // encapuslation public private protected  
+//     public $description;
+//     public $completed= false;
 
-    // automatically triggered on istantiation
-    // when ever we create new task
-    public function __construct($description)
-    {
+//     // automatically triggered on istantiation
+//     // when ever we create new task
+//     public function __construct($description)
+//     {
         
-        // description is a property
-       // assinging argument value to  property 
-        $this -> description = $description;
-    }
+//         // description is a property
+//        // assinging argument value to  property 
+//         $this -> description = $description;
+//     }
 
-    public function complete (){
-      $this -> completed = true;
-    }
+//     public function complete (){
+//       $this -> completed = true;
+//     }
 
-    public function isComplete(){
-        return $this -> completed;
+//     public function isComplete(){
+//         return $this -> completed;
 
-    }
+//     }
 
-    // public function description (){
+//     // public function description (){
 
-    //     return $this -> description;
-    // }
-}
+//     //     return $this -> description;
+//     // }
+// }
 
-$tasks = [
-    //different isntants of the class
-    new Task ('Go to the store'),
-    new Task ('Finish my screencast'),
-    new Task ('Clean my room')
-];
+// $tasks = [
+//     //different isntants of the class
+//     new Task ('Go to the store'),
+//     new Task ('Finish my screencast'),
+//     new Task ('Clean my room')
+// ];
 
-$tasks[0] -> complete();
+// $tasks[0] -> complete();
 
 //dd($task);
 // instentiated a task 
