@@ -6,15 +6,16 @@ $pdo = new PDO('mysql:host=127.0.0.1; dbname=alidb','root','');
 }
 
 catch(PDOException $e){
-    die('died');
+    die($e -> getMessage());
 }
 
 $statement = $pdo -> prepare('select * from todos');
 
 $statement -> execute();
 
-dd($statement->fetchAll());
+$result = $statement->fetchAll(PDO::FETCH_OBJ);
 
+var_dump($result[0]->description);
 // class name Should be noun
 
 // class Task {
