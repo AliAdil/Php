@@ -2,12 +2,19 @@
  require 'functions.php';
 
  try{
-$pdo = new PDO('mysql:host=127.0.0.1; dbname=test','username','');
+$pdo = new PDO('mysql:host=127.0.0.1; dbname=alidb','root','');
 }
 
 catch(PDOException $e){
-    echo'<h1>what went wrong</h1>';
+    die('died');
 }
+
+$statement = $pdo -> prepare('select * from todos');
+
+$statement -> execute();
+
+dd($statement->fetchAll());
+
 // class name Should be noun
 
 // class Task {
