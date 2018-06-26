@@ -2,7 +2,7 @@
  require 'functions.php';
 
  try{
-$pdo = new PDO('mysql:host=127.0.0.1;dbname=alidb','username','');
+$pdo = new PDO('mysql:host=127.0.0.1; dbname=test','username','');
 }
 
 catch(PDOException $e){
