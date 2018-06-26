@@ -6,7 +6,7 @@ $pdo = new PDO('mysql:host=127.0.0.1; dbname=test','username','');
 }
 
 catch(PDOException $e){
-    echo'what went wrong';
+    echo'<h1>what went wrong</h1>';
 }
 // class name Should be noun
 
