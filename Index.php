@@ -22,6 +22,7 @@ $statement -> execute();
 $tasks = $statement->fetchAll(PDO::FETCH_CLASS,'Task');
 
 //var_dump($tasks[0]->description);
+dd($tasks[0]->foobar());
 
 
 //////////****SQL QUERY */////////////////////////
