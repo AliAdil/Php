@@ -1,5 +1,6 @@
 <?php
  require 'functions.php';
+ require 'Task.php'
 
  try{
 $pdo = new PDO('mysql:host=127.0.0.1; dbname=alidb','root','');
@@ -9,13 +10,17 @@ catch(PDOException $e){  // $e is a object is a instance of PDOException class
     die($e -> getMessage());
 }
 
+// prepered statements
 $statement = $pdo -> prepare('select * from todos');
 
 $statement -> execute();
 
-$result = $statement->fetchAll(PDO::FETCH_OBJ);
+//fetcha all fetch all the results 
+$tasks = $statement->fetchAll(PDO::FETCH_OBJ, 'Task');
 
-var_dump($result[0]->description);
+//var_dump($tasks[0]->description);
+
+
 // class name Should be noun
 
 // class Task {
