@@ -1,18 +1,22 @@
 <?php
+
+ $database= require 'bootstrap.php';
  require 'functions.php';
- require 'Database/Connection.php';
- require 'Database/QueryBuilder.php';
  require 'Task.php';
 
 
 
 // $pdo = connectToDb();
-$pdo = Connection::make();
 // $tasks = fetchAllTasks($pdo);
 
-$query = new QueryBuilder($pdo);
 
-$tasks = $query->selectAll('todos');
+
+// $tasks = $query->selectAll('todos','Task');
+$tasks = $database->selectAll('todos');
+
+
+
+
 
 
 require 'index.view.php';
@@ -26,7 +30,13 @@ require 'index.view.php';
 
 
 
+// $tasks = array_map( function ($task){ return foo; }, $tasks);
 
+// $tasks = array_map( function ($task){ 
+//        // return foo;
+//        $t = new Task(); 
+//        $t->description = $task['description'];
+//     }, $tasks);
 
 
 
