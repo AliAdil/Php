@@ -15,7 +15,7 @@ $statement -> execute();
 
 $result = $statement->fetchAll(PDO::FETCH_OBJ);
 
-var_dump($result[2]->completed.' '.$result[2]->description);
+var_dump($result[0]->description);
 // class name Should be noun
 
 // class Task {
