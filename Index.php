@@ -1,31 +1,31 @@
 <?php
  require 'functions.php';
  require 'Task.php';
-//////////****SQL QUERY */////////////////////////
 
 
- try{
-        $pdo = new PDO('mysql:host=127.0.0.1; dbname=alidb','root','');
-    }
 
-catch(PDOException $e)
-    {  // $e is a object is a instance of PDOException class
-        die($e -> getMessage());
-    }
+$pdo = connectToDb();
 
-// prepered statements
-$statement = $pdo -> prepare('select * from todos');
+$tasks = fetchAllTasks($pdo);
 
-$statement -> execute();
+$test = new Task();
 
-//fetcha all fetch all the results PDO::FETCH_Obj
-$tasks = $statement->fetchAll(PDO::FETCH_CLASS,'Task');
+require 'index.view.php';
 
-//var_dump($tasks[0]->description);
-dd($tasks[0]->foobar());
+    
 
 
-//////////****SQL QUERY */////////////////////////
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -120,4 +120,3 @@ dd($tasks[0]->foobar());
 //unset ($person['age']);
 //unset ($person['hair']);
 
-require 'index.view.php';
