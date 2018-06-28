@@ -8,8 +8,6 @@ $pdo = connectToDb();
 
 $tasks = fetchAllTasks($pdo);
 
-$test = new Task();
-
 require 'index.view.php';
 
     

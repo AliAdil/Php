@@ -18,11 +18,12 @@ function fetchAllTasks($pdo)
     {
 
     // prepered statements
-    $statement = $pdo->prepare('select * from todos');
     
-     $statement->execute();
-    
+    $statement= $pdo->prepare ('select * from todos');
+    $statement->execute();
     return $statement->fetchAll(PDO::FETCH_OBJ);
+
+
     //fetcha all fetch all the results PDO::FETCH_Obj
     // return $tasks = $statement->fetchAll(PDO::FETCH_CLASS,'Task');
     
