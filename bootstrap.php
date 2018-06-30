@@ -1,5 +1,5 @@
 <?php 
-
+$confiq = require 'Database/confiq.php';
 require 'Database/Connection.php';
 require 'Database/QueryBuilder.php';
 
@@ -11,5 +11,5 @@ require 'Database/QueryBuilder.php';
 
 return new QueryBuilder
 (
-    Connection::make()
+    Connection::make($confiq['database'])
 );

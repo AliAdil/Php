@@ -1,11 +1,14 @@
 <?php
-
 return [
-    'database' => [
+    'database' => 
+        [
         'name' => 'alidb',
         'username'=>'root',
         'password'=>'',
         'connection'=> 'mysql:host=127.0.0.1',
-        'option'=>[]
-    ]
-]
+        'options'=>[]
+        ]
+    ];
+
+
+    // $confiq['database']
