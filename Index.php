@@ -12,7 +12,7 @@
 
 
 // $tasks = $query->selectAll('todos','Task');
-$tasks = $database->selectAll('TODOS');
+$tasks = $database->selectAll('TODO');
 
 
 
